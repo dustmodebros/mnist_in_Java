@@ -5,7 +5,6 @@ public class Start {
 	float[] inputs;
 	Node[] nodes;
 	int numNodesOut;
-	Layer<?> next;
 
 	public Start(float[] inputs, int numNodesOut) {
 		this.inputs = inputs;
@@ -34,6 +33,7 @@ public class Start {
 			}
 		}
 	}
+	
 	public float[] calculateOutputs() {
 		float[] out = new float[numNodesOut];
 		for (int i = 0; i < numNodesOut; i++) {

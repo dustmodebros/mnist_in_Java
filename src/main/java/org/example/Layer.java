@@ -1,10 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.random.RandomGenerator;
-
-public class Layer <T>{
+public class Layer <T> implements Bruh{
 	Node[] nodes;
 	T prev;
 	int numNodesNext;
@@ -19,6 +15,7 @@ public class Layer <T>{
 		this.id = id;
 	}
 
+	@Override
 	public void showContents(){
 		if (prev instanceof Layer<?>){
 			System.out.println("number of nodes in: " + ((Layer<?>) prev).numNodesOf + "\nnumber of nodes: " + numNodesOf);//+ "\nnumber of nodes out: " + next.numNodesOf);
@@ -51,6 +48,7 @@ public class Layer <T>{
 		nodes = the;
 	}
 
+	@Override
 	public float[] calculateOutputs() {
 		float[] out = new float[numNodesNext];
 		for (int i = 0; i < numNodesNext; i++) {
