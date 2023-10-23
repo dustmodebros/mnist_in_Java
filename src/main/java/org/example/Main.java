@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-//		Start start = new Start(new float[]{-1.0f, 1.0f, 0.3f}, 10);
+//		Start start = new Start(new double[]{-1.0f, 1.0f, 0.3f}, 10);
 //		start.randomiseGenerate();
 //		start.showContents();
 //
@@ -13,7 +13,7 @@ public class Main {
 //		layer1.showContents();
 //		System.out.println("\n\n" + Arrays.toString(layer1.calculateOutputs()));
 		//
-		NeuralNet balls = new NeuralNet(3, new int[]{1, 1, 1, 90}, new float[]{0.5f, -0.6f, 0.9f});
+		NeuralNet balls = new NeuralNet(3, new int[]{1, 1, 1, 1}, new double[]{0.5f, -0.6f, 0.9f});
 		System.out.println(Arrays.toString(balls.calculateOutputs()));
 	}
 }

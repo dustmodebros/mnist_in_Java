@@ -2,7 +2,7 @@ package org.example;
 
 public interface Bruh {
 
-	float[] calculateOutputs();
+	double[] calculateOutputs();
 	void showContents();
 
 }

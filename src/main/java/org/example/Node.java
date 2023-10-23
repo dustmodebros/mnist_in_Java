@@ -1,21 +1,13 @@
 package org.example;
 
 public class Node {
-	float bias;
-	float activation;
+	double bias;
 	int numOut;
-	float[] forwardWeights;
+	double[] forwardWeights;
 
-	public Node(float bias, int numOut, float[] forwardWeights) {
+	public Node(double bias, int numOut, double[] forwardWeights) {
 		this.bias = bias;
 		this.numOut = numOut;
 		this.forwardWeights = forwardWeights;
 	}
-
-	public float calcActivation(float weightedInput){
-		activation = bias+weightedInput;
-		return activation;
-	}
-
-
 }
