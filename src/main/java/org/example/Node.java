@@ -10,4 +10,6 @@ public class Node {
 		this.numOut = numOut;
 		this.forwardWeights = forwardWeights;
 	}
+
+
 }

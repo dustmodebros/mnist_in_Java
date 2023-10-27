@@ -85,6 +85,10 @@ public class Layer <T> implements Bruh{
 		nodes = nodeArray;
 	}
 
+	double activation(double in){
+		return 1/(1+Math.exp(-in));
+	}
+
 	@Override
 	public double[] calculateOutputs() {
 		double[] out = new double[numNodesNext];
@@ -92,6 +96,7 @@ public class Layer <T> implements Bruh{
 			for (int j = 0; j < nodes.length; j++) {
 				out[i] += weightedInput[j]*nodes[j].forwardWeights[i] + nodes[j].bias;
 			}
+			out[i] = activation(out[i]);
 		}
 		return out;
 	}

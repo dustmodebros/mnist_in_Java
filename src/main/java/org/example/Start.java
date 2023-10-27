@@ -71,6 +71,10 @@ public class Start {
 			}
 		}
 	}
+
+	double activation(double in){
+		return 1/(1+Math.exp(-in));
+	}
 	
 	public double[] calculateOutputs() {
 		double[] out = new double[numNodesOut];
@@ -78,6 +82,7 @@ public class Start {
 			for (int j = 0; j < nodes.length; j++) {
 				out[i] += inputs[j]*nodes[j].forwardWeights[i] + nodes[j].bias;
 			}
+			out[i] = activation(out[i]);
 		}
 		return out;
 	}
