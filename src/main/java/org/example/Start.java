@@ -13,6 +13,16 @@ public class Start {
 		this.numNodesOut = numNodesOut;
 	}
 
+	public Start(double[] inputs, int numNodesOut, double[][] manualWeightsArray, double[] manualBiasArray) {
+		this.inputs = inputs;
+		this.numNodesOut = numNodesOut;
+		Node[] nodeArray = new Node[inputs.length];
+		for (int i = 0; i < inputs.length; i++) {
+			nodeArray[i] = new Node(manualBiasArray[i], numNodesOut, manualWeightsArray[i]);
+		}
+		nodes = nodeArray;
+	}
+
 	public void randomiseGenerate(){
 		Node[] the = new Node[inputs.length];
 		for (int i=0; i<inputs.length; i++) {

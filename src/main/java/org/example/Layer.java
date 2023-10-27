@@ -17,6 +17,20 @@ public class Layer <T> implements Bruh{
 		this.id = id;
 	}
 
+	public Layer(int id, T prev, int of, double[] weightedInput, int numNodesNext, double[][] manualWeightsArray, double[] manualBiasArray){
+		this.numNodesNext = numNodesNext;
+		this.prev = prev;
+		this.numNodesOf = of;
+		this.weightedInput = weightedInput;
+		this.id = id;
+		Node[] nodeArray = new Node[of];
+		for (int i = 0; i < of; i++) {
+			nodeArray[i] = new Node(manualBiasArray[i], numNodesNext, manualWeightsArray[i]);
+			System.out.println("Layer " + id + " has had Node " + i + " added to its nodes");
+		}
+		nodes = nodeArray;
+	}
+
 	@Override
 	public void showContents(){
 		if (prev instanceof Layer<?>){
