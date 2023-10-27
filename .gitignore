@@ -1,2 +1,15 @@
 #Ignore generated files
 */target
+/target/classes/org/example/Bruh.class
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/classes/org/example/Layer.class
+/target/test-classes/org/example/LayerTest.class
+/target/classes/org/example/Main.class
+/target/classes/org/example/NeuralNet.class
+/target/classes/org/example/Node.class
+/target/classes/org/example/Start.class
+/target/surefire-reports/Test.txt
+/target/surefire-reports/TEST-Test.xml
