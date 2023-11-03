@@ -36,4 +36,8 @@ public class NeuralNet {
 	public double[] calculateOutputs() {
 		return layers[layers.length-1].calculateOutputs();
 	}
+
+	public double calculateCost(double[] expectedOutputs) {
+		return layers[layers.length-1].calculateCost(expectedOutputs);
+	}
 }

@@ -101,4 +101,15 @@ public class Layer <T> implements Bruh{
 		return out;
 	}
 
+	public double calculateCost(double[] expectedOutputs) {
+		double cost = 0;
+		double the;
+		double[] outs = this.calculateOutputs();
+		for (int i = 0; i < outs.length; i++) {
+			the = expectedOutputs[i] - outs[i];
+			cost += the*the;
+		}
+		return cost;
+	}
+
 }
