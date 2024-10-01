@@ -9,3 +9,4 @@ It ain't pretty, but it works!
 ## Future plans
 1. Add a convolutional stage
 2. Explore visualising cost graph
+3. Add ability to load existing weights
