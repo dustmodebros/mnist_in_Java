@@ -1,16 +1,11 @@
 # MNIST in Java from scratch
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
-This is my **MNIST digit** classifier written from scratch in Java, and visualised using the **Java swing** library. Dataset not included.
-
-It ain't pretty, but it works!
-
-<img width="498" alt="Screenshot 2024-10-01 at 01 25 06" src="https://github.com/user-attachments/assets/3d40db39-aa8b-45e5-bb08-acae40a29cde">
-<img width="406" alt="Screenshot 2024-10-01 at 01 27 47" src="https://github.com/user-attachments/assets/3e6d2859-e8fe-4954-b2cf-7a4762ca1df3">
+This is my **MNIST digit** classifier written from scratch in Java, and visualised using the **Java swing** library. Dataset not included!
 
 ## Overview
 
-This project implements a neural network classifier in Java to recognize handwritten digits from the MNIST dataset. The goal is to explore machine learning concepts, understand neural network architecture, and to develop my own familiarity with Java.
+This project implements a neural network classifier in Java to recognize handwritten digits from the MNIST dataset. My goal in creating this project was to explore machine learning concepts, understand neural network architecture, and to develop my own familiarity with Java.
 
 ## Features
 
@@ -65,7 +60,9 @@ The MNIST dataset is not included in the project due to size limitations. It can
 
 ### Training
 
-The model is trained using the MNIST training set, and you can monitor the training progress in the console output via .
+The model is trained using the MNIST training set, and you can monitor the training progress (current cost, averaged cost over 100 training iterations) in the console output, as well as watch the network's predicitons become more accurate in real time.
+
+<img width="498" alt="Screenshot 2024-10-01 at 01 25 06" src="https://github.com/user-attachments/assets/3d40db39-aa8b-45e5-bb08-acae40a29cde">
 
 ### Evaluation
 
@@ -74,11 +71,12 @@ After training, the model is evaluated using the MNIST test set, and accuracy me
 ## Future plans
 1. Add a convolutional stage
 2. Explore visualising cost graph
-3. Add ability to load existing weights
+3. Add ability to load existing weights from an already trained network.
+   
 ## Acknowledgments
 
-- Special thanks to Yann LeCun and the MNIST dataset contributors for providing the dataset.
-- Inspired by various resources on machine learning and neural networks.
+- Thanks to Yann LeCun and the MNIST dataset contributors for providing the dataset.
+- Inspired by various resources on machine learning and neural networks, Especially those by Sebastian Lague (https://youtu.be/hfMk-kjRv4c?si=rVrl2Yi7CzuAaA5G) and 3Blue1Brown (https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 
 ---
 
