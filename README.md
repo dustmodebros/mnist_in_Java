@@ -76,7 +76,7 @@ After training, the model is evaluated using the MNIST test set, and accuracy me
 ## Acknowledgments
 
 - Thanks to Yann LeCun and the MNIST dataset contributors for providing the dataset.
-- Inspired by various resources on machine learning and neural networks, Especially those by Sebastian Lague (https://youtu.be/hfMk-kjRv4c?si=rVrl2Yi7CzuAaA5G) and 3Blue1Brown (https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+- This project was inspired by various resources on machine learning and neural networks, Especially those by Sebastian Lague (https://youtu.be/hfMk-kjRv4c?si=rVrl2Yi7CzuAaA5G) and 3Blue1Brown (https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 
 ---
 
