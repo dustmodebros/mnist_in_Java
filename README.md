@@ -35,7 +35,7 @@ This project implements a neural network classifier in Java to recognize handwri
 2. Navigate to the project directory:
 
    ```bash
-   cd mnist-classifier-java
+   cd mnist_in_Java
    ```
 
 3. Build the project using Maven:
@@ -53,7 +53,7 @@ The MNIST dataset is not included in the project due to size limitations. It can
 1. Run the main application:
 
    ```bash
-   java -cp target/mnist-classifier-java-1.0-SNAPSHOT.jar com.example.Main
+   java -cp target/mnist_in_Java-1.0-SNAPSHOT.jar com.example.Main
    ```
 
 2. Set the `trainSet` and `testSet` variables to the path to the downloaded .csv files in the `Main` class to load the datasets.
@@ -68,7 +68,7 @@ The model is trained using the MNIST training set, and you can monitor the train
 
 ### Evaluation
 
-After training, the model is evaluated using the MNIST test set, and accuracy metrics are printed to the console.
+During and after training, the model is evaluated using the test set, and accuracy metrics are printed to the console.
 
 ## Future plans
 1. Add a convolutional stage
