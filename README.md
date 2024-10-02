@@ -29,7 +29,7 @@ This project implements a neural network classifier in Java to recognize handwri
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dustmodebros/mnist_in_java.git
+   git clone https://github.com/dustmodebros/mnist_in_Java.git
    ```
 
 2. Navigate to the project directory:
