@@ -56,7 +56,9 @@ The MNIST dataset is not included in the project due to size limitations. It can
    java -cp target/mnist-classifier-java-1.0-SNAPSHOT.jar com.example.Main
    ```
 
-2. Adjust the parameters in the `Main` class to configure the neural network architecture and learning rate.
+2. Set the `trainSet` and `testSet` variables to the path to the downloaded .csv files in the `Main` class to load the datasets.
+
+3. Adjust the parameters in the `Main` class to configure the neural network architecture and learning rate.
 
 ### Training
 
