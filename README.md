@@ -73,7 +73,8 @@ During and after training, the model is evaluated using the test set, and accura
 ## Future plans
 1. Add a convolutional stage
 2. Explore visualising cost graph
-3. Add ability to load existing weights from an already trained network.
+3. Add measures to reduce overfitting (dropout, early stopping, etc)
+4. Add ability to load existing weights from an already trained network.
    
 ## Acknowledgments
 
